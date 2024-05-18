@@ -1,5 +1,5 @@
 import { MixedRouteSDK, Trade as RouterTrade } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount, Ether, Token, TradeType } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Ether, Token, TradeType } from '@nizaglobal/sdk-core'
 import { Pair, Route as V2Route } from '@uniswap/v2-sdk'
 import { Pool, Route as V3Route, FeeAmount } from '@uniswap/v3-sdk'
 import { BigNumber } from 'ethers'
@@ -107,17 +107,17 @@ export class RouterTradeAdapter {
       return {
         routev3: isOnlyV3
           ? new V3Route(
-              (subRoute as V3PoolInRoute[]).map(RouterTradeAdapter.toPool),
-              parsedCurrencyIn,
-              parsedCurrencyOut
-            )
+            (subRoute as V3PoolInRoute[]).map(RouterTradeAdapter.toPool),
+            parsedCurrencyIn,
+            parsedCurrencyOut
+          )
           : null,
         routev2: isOnlyV2
           ? new V2Route(
-              (subRoute as V2PoolInRoute[]).map(RouterTradeAdapter.toPair),
-              parsedCurrencyIn,
-              parsedCurrencyOut
-            )
+            (subRoute as V2PoolInRoute[]).map(RouterTradeAdapter.toPair),
+            parsedCurrencyIn,
+            parsedCurrencyOut
+          )
           : null,
         mixedRoute:
           !isOnlyV3 && !isOnlyV2

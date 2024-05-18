@@ -7,7 +7,7 @@ import { MixedRouteTrade, MixedRouteSDK } from '@uniswap/router-sdk'
 import { Trade as V2Trade, Pair, Route as RouteV2 } from '@uniswap/v2-sdk'
 import { Trade as V3Trade, Route as RouteV3, Pool, FeeOptions } from '@uniswap/v3-sdk'
 import { generatePermitSignature, toInputPermit, makePermit, generateEip2098PermitSignature } from './utils/permit2'
-import { CurrencyAmount, Ether, Percent, Token, TradeType } from '@uniswap/sdk-core'
+import { CurrencyAmount, Ether, Percent, Token, TradeType } from '@nizaglobal/sdk-core'
 import { registerFixture } from './forge/writeInterop'
 import { buildTrade, getUniswapPools, swapOptions, ETHER, DAI, USDC, WETH } from './utils/uniswapData'
 import { hexToDecimalString } from './utils/hexToDecimalString'
@@ -34,7 +34,7 @@ describe('Uniswap', () => {
   let USDC_DAI_V3: Pool
 
   before(async () => {
-    ;({ WETH_USDC_V2, USDC_DAI_V2, WETH_USDC_V3, USDC_DAI_V3, WETH_USDC_V3_LOW_FEE } = await getUniswapPools(
+    ; ({ WETH_USDC_V2, USDC_DAI_V2, WETH_USDC_V3, USDC_DAI_V3, WETH_USDC_V3_LOW_FEE } = await getUniswapPools(
       FORK_BLOCK
     ))
   })

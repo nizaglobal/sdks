@@ -10,7 +10,7 @@ import { Trade as V3Trade, Route as RouteV3, Pool } from '@uniswap/v3-sdk'
 import { generatePermitSignature, makePermit } from './utils/permit2'
 
 import { UniswapTrade } from '../src'
-import { CurrencyAmount, TradeType } from '@uniswap/sdk-core'
+import { CurrencyAmount, TradeType } from '@nizaglobal/sdk-core'
 import { registerFixture } from './forge/writeInterop'
 import { buildTrade, getUniswapPools, swapOptions, DAI, ETHER, WETH, USDC } from './utils/uniswapData'
 import {
@@ -48,7 +48,7 @@ describe('SwapRouter.swapCallParameters', () => {
     let WETH_USDC_V2: Pair
 
     beforeEach(async () => {
-      ;({ WETH_USDC_V3, USDC_DAI_V2, WETH_USDC_V2 } = await getUniswapPools(15360000))
+      ; ({ WETH_USDC_V3, USDC_DAI_V2, WETH_USDC_V2 } = await getUniswapPools(15360000))
     })
 
     it('erc20 -> 1 looksrare nft', async () => {

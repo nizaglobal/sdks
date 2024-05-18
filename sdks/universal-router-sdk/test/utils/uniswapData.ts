@@ -12,7 +12,7 @@ import {
   FeeAmount,
 } from '@uniswap/v3-sdk'
 import { SwapOptions } from '../../src'
-import { CurrencyAmount, TradeType, Ether, Token, Percent, Currency } from '@uniswap/sdk-core'
+import { CurrencyAmount, TradeType, Ether, Token, Percent, Currency } from '@nizaglobal/sdk-core'
 import IUniswapV3Pool from '@uniswap/v3-core/artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json'
 import { TEST_RECIPIENT_ADDRESS } from './addresses'
 

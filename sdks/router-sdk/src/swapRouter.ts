@@ -1,5 +1,5 @@
 import { Interface } from '@ethersproject/abi'
-import { Currency, CurrencyAmount, Percent, TradeType, validateAndParseAddress, WETH9 } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Percent, TradeType, validateAndParseAddress, WETH9 } from '@nizaglobal/sdk-core'
 import { abi } from '@uniswap/swap-router-contracts/artifacts/contracts/interfaces/ISwapRouter02.sol/ISwapRouter02.json'
 import { Trade as V2Trade } from '@uniswap/v2-sdk'
 import {
@@ -74,10 +74,10 @@ type AnyTradeType =
   | V3Trade<Currency, Currency, TradeType>
   | MixedRouteTrade<Currency, Currency, TradeType>
   | (
-      | V2Trade<Currency, Currency, TradeType>
-      | V3Trade<Currency, Currency, TradeType>
-      | MixedRouteTrade<Currency, Currency, TradeType>
-    )[]
+    | V2Trade<Currency, Currency, TradeType>
+    | V3Trade<Currency, Currency, TradeType>
+    | MixedRouteTrade<Currency, Currency, TradeType>
+  )[]
 
 /**
  * Represents the Uniswap V2 + V3 SwapRouter02, and has static methods for helping execute trades.
@@ -88,7 +88,7 @@ export abstract class SwapRouter {
   /**
    * Cannot be constructed.
    */
-  private constructor() {}
+  private constructor() { }
 
   /**
    * @notice Generates the calldata for a Swap with a V2 Route.
@@ -111,8 +111,8 @@ export abstract class SwapRouter {
     const recipient = routerMustCustody
       ? ADDRESS_THIS
       : typeof options.recipient === 'undefined'
-      ? MSG_SENDER
-      : validateAndParseAddress(options.recipient)
+        ? MSG_SENDER
+        : validateAndParseAddress(options.recipient)
 
     if (trade.tradeType === TradeType.EXACT_INPUT) {
       const exactInputParams = [amountIn, performAggregatedSlippageCheck ? 0 : amountOut, path, recipient]
@@ -151,8 +151,8 @@ export abstract class SwapRouter {
       const recipient = routerMustCustody
         ? ADDRESS_THIS
         : typeof options.recipient === 'undefined'
-        ? MSG_SENDER
-        : validateAndParseAddress(options.recipient)
+          ? MSG_SENDER
+          : validateAndParseAddress(options.recipient)
 
       if (singleHop) {
         if (trade.tradeType === TradeType.EXACT_INPUT) {
@@ -237,8 +237,8 @@ export abstract class SwapRouter {
       const recipient = routerMustCustody
         ? ADDRESS_THIS
         : typeof options.recipient === 'undefined'
-        ? MSG_SENDER
-        : validateAndParseAddress(options.recipient)
+          ? MSG_SENDER
+          : validateAndParseAddress(options.recipient)
 
       const mixedRouteIsAllV3 = (route: MixedRouteSDK<Currency, Currency>) => {
         return route.pools.every((pool) => pool instanceof Pool)
@@ -328,9 +328,9 @@ export abstract class SwapRouter {
   ): {
     calldatas: string[]
     sampleTrade:
-      | V2Trade<Currency, Currency, TradeType>
-      | V3Trade<Currency, Currency, TradeType>
-      | MixedRouteTrade<Currency, Currency, TradeType>
+    | V2Trade<Currency, Currency, TradeType>
+    | V3Trade<Currency, Currency, TradeType>
+    | MixedRouteTrade<Currency, Currency, TradeType>
     routerMustCustody: boolean
     inputIsNative: boolean
     outputIsNative: boolean
@@ -508,10 +508,10 @@ export abstract class SwapRouter {
       | V3Trade<Currency, Currency, TradeType>
       | MixedRouteTrade<Currency, Currency, TradeType>
       | (
-          | V2Trade<Currency, Currency, TradeType>
-          | V3Trade<Currency, Currency, TradeType>
-          | MixedRouteTrade<Currency, Currency, TradeType>
-        )[],
+        | V2Trade<Currency, Currency, TradeType>
+        | V3Trade<Currency, Currency, TradeType>
+        | MixedRouteTrade<Currency, Currency, TradeType>
+      )[],
     options: SwapOptions
   ): MethodParameters {
     const {
