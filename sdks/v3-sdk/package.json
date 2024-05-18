@@ -1,9 +1,9 @@
 {
-  "name": "@uniswap/v3-sdk",
+  "name": "@nizaglobal/v3-sdk",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "repository": "https://github.com/nizaglobal/sdks.git",
   "keywords": [
-    "uniswap",
+    "nizaglobal",
     "ethereum"
   ],
   "license": "MIT",
