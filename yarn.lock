@@ -2626,6 +2626,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nizaglobal/sdk-core@workspace:sdks/sdk-core":
+  version: 0.0.0-use.local
+  resolution: "@nizaglobal/sdk-core@workspace:sdks/sdk-core"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    "@types/big.js": ^4.0.5
+    "@types/jest": ^24.0.25
+    big.js: ^5.2.2
+    decimal.js-light: ^2.5.0
+    jsbi: ^3.1.4
+    tiny-invariant: ^1.1.0
+    toformat: ^2.0.0
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
 "@noble/hashes@npm:1.2.0, @noble/hashes@npm:~1.2.0":
   version: 1.2.0
   resolution: "@noble/hashes@npm:1.2.0"
@@ -4643,22 +4659,6 @@ __metadata:
   checksum: 06a4b9ccec3e19bdf695011999c4039a0477910ad5e4128efd8a06e44c23fb40d3685ef5ef2d520632562fe4d0fa486d01326b391266e8e08f43dfc522bd41d5
   languageName: node
   linkType: hard
-
-"@uniswap/sdk-core@workspace:sdks/sdk-core":
-  version: 0.0.0-use.local
-  resolution: "@uniswap/sdk-core@workspace:sdks/sdk-core"
-  dependencies:
-    "@ethersproject/address": ^5.0.2
-    "@types/big.js": ^4.0.5
-    "@types/jest": ^24.0.25
-    big.js: ^5.2.2
-    decimal.js-light: ^2.5.0
-    jsbi: ^3.1.4
-    tiny-invariant: ^1.1.0
-    toformat: ^2.0.0
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
 
 "@uniswap/swap-router-contracts@npm:^1.3.0":
   version: 1.3.1
