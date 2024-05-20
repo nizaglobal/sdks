@@ -1,5 +1,5 @@
 import { Currency, Fraction, Percent, Price, sortedInsert, CurrencyAmount, TradeType, Token } from '@nizaglobal/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import { Pair } from '@nizaglobal/v2-sdk'
 import { BestTradeOptions, Pool } from '@nizaglobal/v3-sdk'
 import invariant from 'tiny-invariant'
 import { ONE, ZERO } from '../../constants'

@@ -1,5 +1,5 @@
 import { RoutePlanner, CommandType } from '../../utils/routerCommands'
-import { Trade as V2Trade, Pair } from '@uniswap/v2-sdk'
+import { Trade as V2Trade, Pair } from '@nizaglobal/v2-sdk'
 import { Trade as V3Trade, Pool, encodeRouteToPath } from '@nizaglobal/v3-sdk'
 import {
   Trade as RouterTrade,

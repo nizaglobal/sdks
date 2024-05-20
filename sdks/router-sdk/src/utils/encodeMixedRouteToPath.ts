@@ -1,7 +1,7 @@
 import { pack } from '@ethersproject/solidity'
 import { Currency, Token } from '@nizaglobal/sdk-core'
 import { Pool } from '@nizaglobal/v3-sdk'
-import { Pair } from '@uniswap/v2-sdk'
+import { Pair } from '@nizaglobal/v2-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 import { V2_FEE_PATH_PLACEHOLDER } from '../constants'
 

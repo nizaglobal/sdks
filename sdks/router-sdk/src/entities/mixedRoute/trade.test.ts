@@ -1,5 +1,5 @@
 import { Percent, Price, sqrt, Token, CurrencyAmount, TradeType, WETH9, Ether, Currency } from '@nizaglobal/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import { Pair } from '@nizaglobal/v2-sdk'
 import { encodeSqrtRatioX96, FeeAmount, nearestUsableTick, Pool, TickMath, TICK_SPACINGS } from '@nizaglobal/v3-sdk'
 import JSBI from 'jsbi'
 import { MixedRouteSDK } from './route'
