@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@nizaglobal/permit2-sdk": "^1.0.1",
-    "@uniswap/router-sdk": "^1.9.2",
+    "@nizaglobal/router-sdk": "^1.0.0",
     "@nizaglobal/sdk-core": "^1.0.1",
     "@uniswap/universal-router": "1.6.0",
     "@uniswap/v2-sdk": "^4.3.2",
@@ -96,5 +96,5 @@
   "installConfig": {
     "hoistingLimits": "workspaces"
   },
-  "version": "1.0.4"
+  "version": "1.0.5"
 }
