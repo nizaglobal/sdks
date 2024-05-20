@@ -1,4 +1,4 @@
-import { MixedRouteSDK, Trade as RouterTrade } from '@uniswap/router-sdk'
+import { MixedRouteSDK, Trade as RouterTrade } from '@nizaglobal/router-sdk'
 import { Currency, CurrencyAmount, Ether, Token, TradeType } from '@nizaglobal/sdk-core'
 import { Pair, Route as V2Route } from '@uniswap/v2-sdk'
 import { Pool, Route as V3Route, FeeAmount } from '@nizaglobal/v3-sdk'
