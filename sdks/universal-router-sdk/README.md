@@ -29,7 +29,7 @@ warning: `swapERC20CallParameters()` to be deprecated in favor of `swapCallParam
 ```typescript
 import { TradeType } from '@nizaglobal/sdk-core'
 import { Trade as V2TradeSDK } from '@uniswap/v2-sdk'
-import { Trade as V3TradeSDK } from '@uniswap/v3-sdk'
+import { Trade as V3TradeSDK } from '@nizaglobal/v3-sdk'
 import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from '@uniswap/router-sdk'
 
 const options = { slippageTolerance, recipient }
@@ -48,7 +48,7 @@ Use `trade_type: TradeType.EXACT_OUTPUT` to cover the entire NFT price, alternat
 ```typescript
 import { TradeType } from '@nizaglobal/sdk-core'
 import { Trade as V2TradeSDK } from '@uniswap/v2-sdk'
-import { Trade as V3TradeSDK } from '@uniswap/v3-sdk'
+import { Trade as V3TradeSDK } from '@nizaglobal/v3-sdk'
 import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from '@uniswap/router-sdk'
 import {
   ROUTER_AS_RECIPIENT,

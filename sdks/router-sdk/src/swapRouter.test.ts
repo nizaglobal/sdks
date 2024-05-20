@@ -10,7 +10,7 @@ import {
   TickMath,
   TICK_SPACINGS,
   Trade as V3Trade,
-} from '@uniswap/v3-sdk'
+} from '@nizaglobal/v3-sdk'
 import JSBI from 'jsbi'
 import { SwapRouter, Trade } from '.'
 import { ApprovalTypes } from './approveAndCall'

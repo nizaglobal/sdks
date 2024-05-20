@@ -10,7 +10,7 @@ import {
   TickMath,
   TICK_SPACINGS,
   FeeAmount,
-} from '@uniswap/v3-sdk'
+} from '@nizaglobal/v3-sdk'
 import { SwapOptions } from '../../src'
 import { CurrencyAmount, TradeType, Ether, Token, Percent, Currency } from '@nizaglobal/sdk-core'
 import IUniswapV3Pool from '@uniswap/v3-core/artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json'
