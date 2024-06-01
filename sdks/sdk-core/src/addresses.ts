@@ -236,7 +236,7 @@ const BLAST_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x549FEB8c9bd4c12Ad2AB27022dA12492aC452B66',
 }
 
-const NIZA_ADDRESSES: ChainAddresses = {
+const NIZA_TESTNET_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x3AF54E6732825eC606253E23B8fAF5c0E9b0D0C5',
   multicallAddress: '0xDD1456D7dFDFAAFd478CA8231eBa015f51815cA9',
   quoterAddress: '0x8c35a3355854FA7Fff173418f9355bBB60de9c71',
@@ -244,6 +244,16 @@ const NIZA_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0xF9f212C46BF7ED9eBCB44b09CE7d2BF57fd086e2',
   tickLensAddress: '0xfb301C096a341E79CB6427B56B0A64716757ec2c',
   swapRouter02Address: '0x116a88F1b16343728103F8d3dDB6Cb33C226a0eB',
+}
+
+const NIZA_LIVENET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x91A1026b6C238C8c8cE0831ad6422dDB9e4b8B33',
+  multicallAddress: '0xF380cd241f624573f763f5047043D01EE630903e',
+  quoterAddress: '0xb50B053E29f50392d672FF5af9Ae22B8694AA09C',
+  v3MigratorAddress: '0xE75140869ae52B7e790c96199b09139a52b8FBCf',
+  nonfungiblePositionManagerAddress: '0xe7216cCeb282335605599fE364D6dA920587144d',
+  tickLensAddress: '0xd4c85996f8d7a2b9289623346086F3100442A85e',
+  swapRouter02Address: '0x3e6b4D71Df655254E21E8ABccc056a151829BC74',
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
@@ -268,7 +278,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ZORA_SEPOLIA]: ZORA_SEPOLIA_ADDRESSES,
   [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
   [ChainId.BLAST]: BLAST_ADDRESSES,
-  [ChainId.NIZA]: NIZA_ADDRESSES,
+  [ChainId.NIZA_TESTNET]: NIZA_TESTNET_ADDRESSES,
+  [ChainId.NIZA_LIVENET]: NIZA_LIVENET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

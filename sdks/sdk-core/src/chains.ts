@@ -22,7 +22,8 @@ export enum ChainId {
   ZORA_SEPOLIA = 999999999,
   ROOTSTOCK = 30,
   BLAST = 81457,
-  NIZA = 20073,
+  NIZA_TESTNET = 20073,
+  NIZA_LIVENET = 20041,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -47,7 +48,8 @@ export const SUPPORTED_CHAINS = [
   ChainId.ZORA_SEPOLIA,
   ChainId.ROOTSTOCK,
   ChainId.BLAST,
-  ChainId.NIZA,
+  ChainId.NIZA_TESTNET,
+  ChainId.NIZA_LIVENET,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -61,5 +63,6 @@ export enum NativeCurrencyName {
   BNB = 'BNB',
   AVAX = 'AVAX',
   ROOTSTOCK = 'RBTC',
-  NIZA = 'NIZA',
+  NIZA_TESTNET = 'NIZA',
+  NIZA_LIVENET = 'NIZA',
 }
