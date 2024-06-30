@@ -13,7 +13,7 @@ type ChainAddresses = {
   mixedRouteQuoterV1Address?: string
 }
 
-const DEFAULT_NETWORKS = [ChainId.MAINNET, ChainId.GOERLI, ChainId.SEPOLIA]
+const DEFAULT_NETWORKS = [ChainId.MAINNET, ChainId.GOERLI, ChainId.SEPOLIA, ChainId.NIZA_TESTNET]
 
 function constructSameAddressMap(address: string, additionalNetworks: ChainId[] = []): AddressMap {
   return DEFAULT_NETWORKS.concat(additionalNetworks).reduce<AddressMap>((memo, chainId) => {
@@ -237,13 +237,13 @@ const BLAST_ADDRESSES: ChainAddresses = {
 }
 
 const NIZA_TESTNET_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x3AF54E6732825eC606253E23B8fAF5c0E9b0D0C5',
-  multicallAddress: '0xDD1456D7dFDFAAFd478CA8231eBa015f51815cA9',
-  quoterAddress: '0x8c35a3355854FA7Fff173418f9355bBB60de9c71',
-  v3MigratorAddress: '0x55C5Bf190C3D5D80d4e8b254C2B8b76B251871D7',
-  nonfungiblePositionManagerAddress: '0xF9f212C46BF7ED9eBCB44b09CE7d2BF57fd086e2',
+  v3CoreFactoryAddress: '0x1aE6Ecd088cb174ddEe3EEEBc54aA2407d23B83F',
+  multicallAddress: '0xFc9DD2dE236d80e758aECded18c897dF0e4e526a',
+  quoterAddress: '0xE062d4Eda867936A957600C985E1b0e92571A14B',
+  v3MigratorAddress: '0xD0bD336864d04679909f23a83B8De3F7282efA2A',
+  nonfungiblePositionManagerAddress: '0x60f1E7f08e62Cac8B900bcaC26ceC53f18B66503',
   tickLensAddress: '0xfb301C096a341E79CB6427B56B0A64716757ec2c',
-  swapRouter02Address: '0x116a88F1b16343728103F8d3dDB6Cb33C226a0eB',
+  swapRouter02Address: '0xfa61Ebed608874E6A3B2dF4847B681666DA14128',
 }
 
 const NIZA_LIVENET_ADDRESSES: ChainAddresses = {
