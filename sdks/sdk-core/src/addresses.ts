@@ -246,12 +246,12 @@ const NIZA_TESTNET_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0xfa61Ebed608874E6A3B2dF4847B681666DA14128',
 }
 
-const NIZA_LIVENET_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x91A1026b6C238C8c8cE0831ad6422dDB9e4b8B33',
-  multicallAddress: '0xF380cd241f624573f763f5047043D01EE630903e',
-  quoterAddress: '0xb50B053E29f50392d672FF5af9Ae22B8694AA09C',
-  v3MigratorAddress: '0xE75140869ae52B7e790c96199b09139a52b8FBCf',
-  nonfungiblePositionManagerAddress: '0xe7216cCeb282335605599fE364D6dA920587144d',
+const NIZA_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x9bd61Df3B2bCa7f403F0eA59c86c8E6b032fbAf9',
+  multicallAddress: '0x378c2DD48f2c8EC91734c036a6227aAdD0016f58',
+  quoterAddress: '0x592b312ef9fE0602463588117E3039a3907118C3',
+  v3MigratorAddress: '0x9e15387ef7E89ac31A4441d535Ccb54B357094b2',
+  nonfungiblePositionManagerAddress: '0xFb70098882BEf5198fE3294fBd3D026741E1B59F',
   tickLensAddress: '0xd4c85996f8d7a2b9289623346086F3100442A85e',
   swapRouter02Address: '0x3e6b4D71Df655254E21E8ABccc056a151829BC74',
 }
@@ -279,7 +279,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
   [ChainId.BLAST]: BLAST_ADDRESSES,
   [ChainId.NIZA_TESTNET]: NIZA_TESTNET_ADDRESSES,
-  [ChainId.NIZA_LIVENET]: NIZA_LIVENET_ADDRESSES,
+  [ChainId.NIZA]: NIZA_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

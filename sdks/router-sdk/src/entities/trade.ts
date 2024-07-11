@@ -51,7 +51,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
     this.routes = []
     // wrap v2 routes
     for (const { routev2, inputAmount, outputAmount } of v2Routes) {
-      const route = new RouteV2(routev2)
+      const route = new RouteV2(routev2) as unknown as IRoute<TInput, TOutput, Pair | Pool>
       this.routes.push(route)
       this.swaps.push({
         route,
@@ -301,7 +301,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
     }[] = []
 
     for (const { routev2, amount } of v2Routes) {
-      const v2Trade = new V2TradeSDK(routev2, amount, tradeType)
+      const v2Trade = new V2TradeSDK(routev2, amount, tradeType as any)
       const { inputAmount, outputAmount } = v2Trade
 
       populatedV2Routes.push({
@@ -367,7 +367,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
     }[] = []
 
     if (route instanceof V2RouteSDK) {
-      const v2Trade = new V2TradeSDK(route, amount, tradeType)
+      const v2Trade = new V2TradeSDK(route, amount, tradeType as any)
       const { inputAmount, outputAmount } = v2Trade
       v2Routes = [{ routev2: route, inputAmount, outputAmount }]
     } else if (route instanceof V3RouteSDK) {
