@@ -2626,13 +2626,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nizaglobal/permit2-sdk@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@nizaglobal/permit2-sdk@npm:1.0.1"
+"@nizaglobal/permit2-sdk@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@nizaglobal/permit2-sdk@npm:1.0.4"
   dependencies:
     ethers: ^5.7.0
     tiny-invariant: ^1.1.0
-  checksum: 27e27e627b75245daa79f8bdd0ddcd3825bceacfc48cdd3639e9c42006b07af2f10ce6e44f80eb7813f415a5a3a04d6a9975ef64912ade15ec0bc9d1608a8c84
+  checksum: 484256211cb8fedabfc4efd3b61ae4a3cd06bdda32545559cdea48ae378b161234a96c2758f6511d7cd3e97c3c4222b7e3b627284cd382d8825312eeecee6dae
   languageName: node
   linkType: hard
 
@@ -2648,16 +2648,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nizaglobal/router-sdk@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@nizaglobal/router-sdk@npm:1.0.0"
+"@nizaglobal/router-sdk@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@nizaglobal/router-sdk@npm:1.0.3"
   dependencies:
     "@ethersproject/abi": ^5.5.0
-    "@nizaglobal/sdk-core": ^1.0.1
-    "@nizaglobal/v3-sdk": ^1.0.3
+    "@nizaglobal/sdk-core": ^1.0.4
+    "@nizaglobal/v2-sdk": ^1.0.1
+    "@nizaglobal/v3-sdk": ^1.0.7
     "@uniswap/swap-router-contracts": ^1.3.0
-    "@uniswap/v2-sdk": ^4.3.2
-  checksum: 6bfc92c3180228a735c5f1dede65f1b11458ee0ca5bf2dbfe896f903df16f6b48c4d9aa392f859ce2c2aec8ceb0ea5b6b7cef8f5fe743e4deeb2514edaf186e6
+  checksum: 9c3b4069c164ef2e17a8c4e470484a5c1bc9e4e11e80ee561a4cc6f5093ffb85af563117872bd1958764e7451b8bd18697792fb316a47474d7a211d52a4e9487
   languageName: node
   linkType: hard
 
@@ -2666,9 +2666,9 @@ __metadata:
   resolution: "@nizaglobal/router-sdk@workspace:sdks/router-sdk"
   dependencies:
     "@ethersproject/abi": ^5.5.0
-    "@nizaglobal/sdk-core": ^1.0.1
+    "@nizaglobal/sdk-core": ^1.0.4
     "@nizaglobal/v2-sdk": ^1.0.1
-    "@nizaglobal/v3-sdk": ^1.0.3
+    "@nizaglobal/v3-sdk": ^1.0.7
     "@types/jest": ^24.0.25
     "@uniswap/swap-router-contracts": ^1.3.0
     prettier: ^2.4.1
@@ -2690,6 +2690,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nizaglobal/sdk-core@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@nizaglobal/sdk-core@npm:1.0.4"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    big.js: ^5.2.2
+    decimal.js-light: ^2.5.0
+    jsbi: ^3.1.4
+    tiny-invariant: ^1.1.0
+    toformat: ^2.0.0
+  checksum: 1419028f8b68b295a16f15e8eb77b24afec95fedc43871aba4e9f19244b368bbaa157ab4a65ae5af8d46a6c4cdc0e9d1a2fa8cd89d30d25e2e3929af90fdc90a
+  languageName: node
+  linkType: hard
+
 "@nizaglobal/sdk-core@workspace:sdks/sdk-core":
   version: 0.0.0-use.local
   resolution: "@nizaglobal/sdk-core@workspace:sdks/sdk-core"
@@ -2706,20 +2720,51 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@nizaglobal/uniswapx-sdk@workspace:sdks/uniswapx-sdk":
+  version: 0.0.0-use.local
+  resolution: "@nizaglobal/uniswapx-sdk@workspace:sdks/uniswapx-sdk"
+  dependencies:
+    "@ethersproject/bytes": ^5.7.0
+    "@ethersproject/providers": ^5.7.0
+    "@nizaglobal/permit2-sdk": ^1.0.4
+    "@nizaglobal/sdk-core": ^1.0.4
+    "@typechain/ethers-v5": ^10.1.0
+    "@types/jest": ^24.0.25
+    "@types/node": ^18.7.16
+    "@typescript-eslint/eslint-plugin": ^5.62
+    "@typescript-eslint/parser": ^5.62
+    eslint: ^7.8.0
+    eslint-config-prettier: ^6.11.0
+    eslint-plugin-eslint-comments: ^3.2.0
+    eslint-plugin-functional: ^3.0.2
+    eslint-plugin-import: ^2.22.0
+    ethers: ^5.7.0
+    husky: ^8.0.3
+    jest: 25.5.0
+    jest-environment-node: 25.5.0
+    npm-run-all: ^4.1.5
+    prettier: ^2.4.1
+    ts-jest: 25.5.0
+    ts-node: ^10.9.1
+    typechain: ^8.1.0
+    typescript: ^4.3.3
+  languageName: unknown
+  linkType: soft
+
 "@nizaglobal/universal-router-sdk@workspace:sdks/universal-router-sdk":
   version: 0.0.0-use.local
   resolution: "@nizaglobal/universal-router-sdk@workspace:sdks/universal-router-sdk"
   dependencies:
-    "@nizaglobal/permit2-sdk": ^1.0.1
-    "@nizaglobal/router-sdk": ^1.0.0
-    "@nizaglobal/sdk-core": ^1.0.1
-    "@nizaglobal/v3-sdk": ^1.0.1
+    "@nizaglobal/permit2-sdk": ^1.0.4
+    "@nizaglobal/router-sdk": ^1.0.3
+    "@nizaglobal/sdk-core": ^1.0.4
+    "@nizaglobal/v2-sdk": ^1.0.1
+    "@nizaglobal/v3-sdk": ^1.0.7
     "@types/chai": ^4.3.3
     "@types/mocha": ^9.1.1
     "@types/node": ^18.7.16
     "@types/node-fetch": ^2.6.2
     "@uniswap/universal-router": 1.6.0
-    "@uniswap/v2-sdk": ^4.3.2
     bignumber.js: ^9.0.2
     chai: ^4.3.6
     dotenv: ^16.0.3
@@ -2765,19 +2810,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nizaglobal/v3-sdk@npm:^1.0.1, @nizaglobal/v3-sdk@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "@nizaglobal/v3-sdk@npm:1.0.3"
+"@nizaglobal/v3-sdk@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "@nizaglobal/v3-sdk@npm:1.0.7"
   dependencies:
     "@ethersproject/abi": ^5.5.0
     "@ethersproject/solidity": ^5.0.9
-    "@nizaglobal/sdk-core": ^1.0.1
+    "@nizaglobal/sdk-core": ^1.0.4
     "@uniswap/swap-router-contracts": ^1.3.0
     "@uniswap/v3-periphery": ^1.1.1
     "@uniswap/v3-staker": 1.0.0
     tiny-invariant: ^1.1.0
     tiny-warning: ^1.0.3
-  checksum: 66ceb92cd3047da36b612cd1bf1c996bf84c22d504e7b1830279b57836a8de7613892bda1b3766569aa594c059ef2391bee5c3698759039875c67dcc0627bcd2
+  checksum: 481a6e2fc2a17e9643cd92bac1faa9e90a371f3cd865edc2ad692e5ff069df4fcc363d4d11ff824480761a801a811331f0e40f5ae3119ba18a19aea09daca04f
   languageName: node
   linkType: hard
 
@@ -2787,7 +2832,7 @@ __metadata:
   dependencies:
     "@ethersproject/abi": ^5.5.0
     "@ethersproject/solidity": ^5.0.9
-    "@nizaglobal/sdk-core": ^1.0.1
+    "@nizaglobal/sdk-core": ^1.0.4
     "@types/jest": ^24.0.25
     "@uniswap/swap-router-contracts": ^1.3.0
     "@uniswap/v3-core": 1.0.0
@@ -4754,30 +4799,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniswap/permit2-sdk@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@uniswap/permit2-sdk@npm:1.2.1"
-  dependencies:
-    ethers: ^5.7.0
-    tiny-invariant: ^1.1.0
-  checksum: 7c4fcc0aaa6e53da0f01c25984b7b37aaf95aa43479a2f374d5867956033ed34d9477b31aa1c0998c51ae3af28ab5dd2902c97f2acd176dac6dfed171ca5b6a4
-  languageName: node
-  linkType: hard
-
-"@uniswap/sdk-core@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "@uniswap/sdk-core@npm:5.0.0"
-  dependencies:
-    "@ethersproject/address": ^5.0.2
-    big.js: ^5.2.2
-    decimal.js-light: ^2.5.0
-    jsbi: ^3.1.4
-    tiny-invariant: ^1.1.0
-    toformat: ^2.0.0
-  checksum: 06a4b9ccec3e19bdf695011999c4039a0477910ad5e4128efd8a06e44c23fb40d3685ef5ef2d520632562fe4d0fa486d01326b391266e8e08f43dfc522bd41d5
-  languageName: node
-  linkType: hard
-
 "@uniswap/swap-router-contracts@npm:^1.3.0":
   version: 1.3.1
   resolution: "@uniswap/swap-router-contracts@npm:1.3.1"
@@ -4791,37 +4812,6 @@ __metadata:
   checksum: cf2e94464077d02af0041ef0971a0b54194970b57bd04bcf114f898724604750fe09fcd12ccc50309e3bb22ea9a513405f226b9ea236e5b53edb252e5cedef8b
   languageName: node
   linkType: hard
-
-"@uniswap/uniswapx-sdk@workspace:sdks/uniswapx-sdk":
-  version: 0.0.0-use.local
-  resolution: "@uniswap/uniswapx-sdk@workspace:sdks/uniswapx-sdk"
-  dependencies:
-    "@ethersproject/bytes": ^5.7.0
-    "@ethersproject/providers": ^5.7.0
-    "@typechain/ethers-v5": ^10.1.0
-    "@types/jest": ^24.0.25
-    "@types/node": ^18.7.16
-    "@typescript-eslint/eslint-plugin": ^5.62
-    "@typescript-eslint/parser": ^5.62
-    "@uniswap/permit2-sdk": ^1.2.1
-    "@uniswap/sdk-core": ^5.0.0
-    eslint: ^7.8.0
-    eslint-config-prettier: ^6.11.0
-    eslint-plugin-eslint-comments: ^3.2.0
-    eslint-plugin-functional: ^3.0.2
-    eslint-plugin-import: ^2.22.0
-    ethers: ^5.7.0
-    husky: ^8.0.3
-    jest: 25.5.0
-    jest-environment-node: 25.5.0
-    npm-run-all: ^4.1.5
-    prettier: ^2.4.1
-    ts-jest: 25.5.0
-    ts-node: ^10.9.1
-    typechain: ^8.1.0
-    typescript: ^4.3.3
-  languageName: unknown
-  linkType: soft
 
 "@uniswap/universal-router@npm:1.6.0":
   version: 1.6.0
@@ -4838,19 +4828,6 @@ __metadata:
   version: 1.0.1
   resolution: "@uniswap/v2-core@npm:1.0.1"
   checksum: eaa118fe45eac2e80b7468547ce2cde12bd3c8157555d2e40e0462a788c9506c6295247b511382da85e44a89ad92aff7bb3433b23bfbd2eeea23942ecd46e979
-  languageName: node
-  linkType: hard
-
-"@uniswap/v2-sdk@npm:^4.3.2":
-  version: 4.3.2
-  resolution: "@uniswap/v2-sdk@npm:4.3.2"
-  dependencies:
-    "@ethersproject/address": ^5.0.2
-    "@ethersproject/solidity": ^5.0.9
-    "@uniswap/sdk-core": ^5.0.0
-    tiny-invariant: ^1.1.0
-    tiny-warning: ^1.0.3
-  checksum: aaf01f49a1ba5c8214ce4f4d54526fb289de7ecdc5df08f6be07c925ee7c110769adbf77e29b2dbbe7678c4ed21f384b522bbc9d7a82af55367bd66bfba8eb83
   languageName: node
   linkType: hard
 
@@ -17847,6 +17824,7 @@ __metadata:
   resolution: "uniswapx-integration@workspace:sdks/uniswapx-sdk/integration"
   dependencies:
     "@ethersproject/bytes": ^5.7.0
+    "@nizaglobal/sdk-core": ^1.0.4
     "@nomicfoundation/hardhat-chai-matchers": 1.0.6
     "@nomicfoundation/hardhat-network-helpers": ^1.0.10
     "@nomiclabs/hardhat-ethers": ^2.2.3
@@ -17855,7 +17833,6 @@ __metadata:
     "@types/chai": ^4.3.3
     "@types/mocha": ^9.1.1
     "@types/node": ^18.7.16
-    "@uniswap/sdk-core": ^5.0.0
     chai: ^4.3.6
     ethers: ^5.7.0
     hardhat: ^2.14.0

@@ -4,7 +4,7 @@ import {
   PermitTransferFromData,
   SignatureTransfer,
   Witness,
-} from "@uniswap/permit2-sdk";
+} from "@nizaglobal/permit2-sdk";
 import { BigNumber, ethers } from "ethers";
 
 import { getPermit2 } from "../utils";
@@ -104,15 +104,15 @@ const V2_DUTCH_ORDER_TYPES = {
 
 const V2_DUTCH_ORDER_ABI = [
   "tuple(" +
-    [
-      "tuple(address,address,uint256,uint256,address,bytes)", // OrderInfo
-      "address", // cosigner
-      "tuple(address,uint256,uint256)", // input
-      "tuple(address,uint256,uint256,address)[]", // outputs
-      COSIGNER_DATA_TUPLE_ABI, // cosignerData
-      "bytes", // cosignature
-    ].join(",") +
-    ")",
+  [
+    "tuple(address,address,uint256,uint256,address,bytes)", // OrderInfo
+    "address", // cosigner
+    "tuple(address,uint256,uint256)", // input
+    "tuple(address,uint256,uint256,address)[]", // outputs
+    COSIGNER_DATA_TUPLE_ABI, // cosignerData
+    "bytes", // cosignature
+  ].join(",") +
+  ")",
 ];
 
 export class UnsignedV2DutchOrder implements OffChainOrder {

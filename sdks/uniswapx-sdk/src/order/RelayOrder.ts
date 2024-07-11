@@ -4,7 +4,7 @@ import {
   PermitBatchTransferFromData,
   SignatureTransfer,
   Witness,
-} from "@uniswap/permit2-sdk";
+} from "@nizaglobal/permit2-sdk";
 import { BigNumber, ethers } from "ethers";
 
 import { PERMIT2_MAPPING } from "../constants";
@@ -94,13 +94,13 @@ const RELAY_WITNESS_TYPES = {
 
 const RELAY_ORDER_ABI = [
   "tuple(" +
-    [
-      "tuple(address,address,uint256,uint256)",
-      "tuple(address,uint256,address)",
-      "tuple(address,uint256,uint256,uint256,uint256)",
-      "bytes",
-    ].join(",") +
-    ")",
+  [
+    "tuple(address,address,uint256,uint256)",
+    "tuple(address,uint256,address)",
+    "tuple(address,uint256,uint256,uint256,uint256)",
+    "bytes",
+  ].join(",") +
+  ")",
 ];
 
 export class RelayOrder implements OffChainOrder {
