@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price, TradeType } from "@uniswap/sdk-core";
+import { Currency, CurrencyAmount, Price, TradeType } from "@nizaglobal/sdk-core";
 
 import { RelayOrder, RelayOrderInfo } from "../order";
 
@@ -45,9 +45,9 @@ export class RelayOrderTrade<
 
   private _feeStartEndAmounts:
     | {
-        startAmount: CurrencyAmount<TInput>;
-        endAmount: CurrencyAmount<TInput>;
-      }
+      startAmount: CurrencyAmount<TInput>;
+      endAmount: CurrencyAmount<TInput>;
+    }
     | undefined;
 
   private _inputAmount: CurrencyAmount<TInput> | undefined;

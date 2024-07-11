@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price, TradeType } from "@uniswap/sdk-core";
+import { Currency, CurrencyAmount, Price, TradeType } from "@nizaglobal/sdk-core";
 
 import { DutchOrder, DutchOrderInfo } from "../order";
 
@@ -73,9 +73,9 @@ export class DutchOrderTrade<
 
   private _firstNonFeeOutputStartEndAmounts:
     | {
-        startAmount: CurrencyAmount<TOutput>;
-        endAmount: CurrencyAmount<TOutput>;
-      }
+      startAmount: CurrencyAmount<TOutput>;
+      endAmount: CurrencyAmount<TOutput>;
+    }
     | undefined;
 
   private getFirstNonFeeOutputStartEndAmounts(): {

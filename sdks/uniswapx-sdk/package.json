@@ -1,9 +1,9 @@
 {
-  "name": "@uniswap/uniswapx-sdk",
+  "name": "@nizaglobal/uniswapx-sdk",
   "author": "Uniswap",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "repository": "https://github.com/nizaglobal/sdks.git",
   "keywords": [
-    "uniswap",
+    "nizaglobal",
     "ethereum"
   ],
   "license": "MIT",
@@ -30,8 +30,8 @@
   "dependencies": {
     "@ethersproject/bytes": "^5.7.0",
     "@ethersproject/providers": "^5.7.0",
-    "@uniswap/permit2-sdk": "^1.2.1",
-    "@uniswap/sdk-core": "^5.0.0",
+    "@nizaglobal/permit2-sdk": "^1.0.4",
+    "@nizaglobal/sdk-core": "^1.0.4",
     "ethers": "^5.7.0"
   },
   "devDependencies": {
@@ -95,5 +95,6 @@
         }
       ]
     ]
-  }
+  },
+  "version": "1.0.0"
 }

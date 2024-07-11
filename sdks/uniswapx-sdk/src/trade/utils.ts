@@ -1,4 +1,4 @@
-import { ChainId, Currency } from "@uniswap/sdk-core";
+import { ChainId, Currency } from "@nizaglobal/sdk-core";
 import { constants } from "ethers";
 
 export enum NativeAssets {
@@ -17,7 +17,7 @@ function nativeCurrencyAddressString(chainId: number): string {
       return NativeAssets.BNB;
     case ChainId.AVALANCHE:
       return NativeAssets.AVAX;
-    case ChainId.NIZA: 
+    case ChainId.NIZA:
       return NativeAssets.NIZA;
     default:
       return NativeAssets.ETH;

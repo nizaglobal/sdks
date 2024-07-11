@@ -30,11 +30,11 @@
     "test:hardhat": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' hardhat test"
   },
   "dependencies": {
-    "@nizaglobal/permit2-sdk": "^1.0.2",
-    "@nizaglobal/router-sdk": "^1.0.2",
-    "@nizaglobal/sdk-core": "^1.0.2",
+    "@nizaglobal/permit2-sdk": "^1.0.4",
+    "@nizaglobal/router-sdk": "^1.0.3",
+    "@nizaglobal/sdk-core": "^1.0.4",
     "@nizaglobal/v2-sdk": "^1.0.1",
-    "@nizaglobal/v3-sdk": "^1.0.5",
+    "@nizaglobal/v3-sdk": "^1.0.7",
     "@uniswap/universal-router": "1.6.0",
     "bignumber.js": "^9.0.2",
     "ethers": "^5.7.0"
@@ -96,5 +96,5 @@
   "installConfig": {
     "hoistingLimits": "workspaces"
   },
-  "version": "1.1.2"
+  "version": "1.1.3"
 }
