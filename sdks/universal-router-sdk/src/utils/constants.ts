@@ -110,9 +110,9 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     creationBlock: 1669950,
   },
   [20041]: {
-    router: '0xB3158656501fec98935F0d2C5c4A9B46e1aba34d',
-    weth: '0xCF5c11f4e1e0035fd163A9F2EE02c6D6C65D313D',
-    creationBlock: 194,
+    router: '0x76f1f533aEd5b309d4dA315B30c28f89466EcD2a',
+    weth: '0x1643F3680992334756912dF244540e7bf46f10f9',
+    creationBlock: 3705783,
   },
 }
 
@@ -134,7 +134,7 @@ export const WETH_ADDRESS = (chainId: number): string => {
   return CHAIN_CONFIGS[chainId].weth
 }
 
-export const PERMIT2_ADDRESS = '0x8fc3f622Be380253a56641D4Dcb167deAcbfFB1E'
+export const PERMIT2_ADDRESS = '0x04d8C9a614B57f7a48590070D0943196174444E9'
 
 export const CONTRACT_BALANCE = BigNumber.from(2).pow(255)
 export const ETH_ADDRESS = '0x0000000000000000000000000000000000000000'

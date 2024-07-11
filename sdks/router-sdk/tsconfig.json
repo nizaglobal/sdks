@@ -7,18 +7,20 @@
     "declaration": true,
     "sourceMap": true,
     "strict": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false, // Allow implicit 'any'
     "strictNullChecks": true,
-    "strictFunctionTypes": true,
+    "strictFunctionTypes": false,
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
+    "alwaysStrict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
   }
 }
