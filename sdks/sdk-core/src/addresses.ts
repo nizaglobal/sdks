@@ -253,7 +253,7 @@ const NIZA_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x9e15387ef7E89ac31A4441d535Ccb54B357094b2',
   nonfungiblePositionManagerAddress: '0xFb70098882BEf5198fE3294fBd3D026741E1B59F',
   tickLensAddress: '0xd4c85996f8d7a2b9289623346086F3100442A85e',
-  swapRouter02Address: '0x3e6b4D71Df655254E21E8ABccc056a151829BC74',
+  swapRouter02Address: '0x239dF500874530EF5C8EBc795b188472dFbe8E7d',
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {

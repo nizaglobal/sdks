@@ -31,7 +31,7 @@
     "@ethersproject/bytes": "^5.7.0",
     "@ethersproject/providers": "^5.7.0",
     "@nizaglobal/permit2-sdk": "^1.0.4",
-    "@nizaglobal/sdk-core": "^1.0.4",
+    "@nizaglobal/sdk-core": "^1.0.5",
     "ethers": "^5.7.0"
   },
   "devDependencies": {

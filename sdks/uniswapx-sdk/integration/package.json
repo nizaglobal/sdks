@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@ethersproject/bytes": "^5.7.0",
-    "@nizaglobal/sdk-core": "^1.0.4",
+    "@nizaglobal/sdk-core": "^1.0.5",
     "@typechain/ethers-v5": "^10.1.0",
     "@typechain/hardhat": "^6.1.2",
     "ethers": "^5.7.0",
